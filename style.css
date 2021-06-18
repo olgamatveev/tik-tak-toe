@@ -16,7 +16,7 @@ body{
     display: flex;
     width: 100%;
     height: 33.33%;
-    border: 1px solid #444;
+    border: 1px solid red;
     margin-top: -1px;
 }
 
@@ -26,12 +26,12 @@ body{
     align-items: center;
     width: 33.33%;
     height: 100%;
-    border: 1px solid #444;
+    border: 1px solid rgb(255, 0, 0);
     transition: 0.5s;
     cursor: pointer;
 }
 .cell:hover{
-    background-color: aqua;
+    background-color: rgba(255,192,203,0.4);
 }
 
 .title{
@@ -60,4 +60,26 @@ body{
     width: 30px;
     height: 30px;
     background: url("Нолик.png") center / cover;
+}
+
+.cell.icon-o,
+.cell.icon-x{
+    width: 33.33%;
+    height: 100%;
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+}
+
+.score{
+    color:salmon;
+    margin: 0 40px;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.turn{
+    width: 15px;
+    height: 15px;
+    background-color:brown;
+    border-radius: 50%;
 }
